@@ -14,6 +14,18 @@ services:
       target: 80
       published: "5000"
       protocol: tcp
+  client:
+    build:
+      context: C:\Users\HS\source\repos\devStartPack\serverAPI\Example\example-client
+      dockerfile: Dockerfile
+    image: client
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 3000
+      published: "5001"
+      protocol: tcp
 networks:
   default:
     name: dockercompose10694756654724241922_default
