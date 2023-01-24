@@ -1,8 +1,8 @@
 version: '3.4'
 
 services:
-  example:
+  backend: 
     image: ${DOCKER_REGISTRY-}example
     build:
-      context: .
-      dockerfile: Example/Dockerfile
+        context: .
+        dockerfile: Example/Dockerfile

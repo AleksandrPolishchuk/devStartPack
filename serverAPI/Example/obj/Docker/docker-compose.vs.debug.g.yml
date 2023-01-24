@@ -1,7 +1,7 @@
 version: '3.4'
 
 services:
-  example:
+  backend:
     image: example:dev
     container_name: Example_1
     build:
