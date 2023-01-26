@@ -26,6 +26,16 @@ services:
       target: 3000
       published: "5001"
       protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\HS\source\repos\devStartPack\serverAPI\Example\nginx.conf
+      target: /etc/nginx/nginx.conf
+      bind:
+        create_host_path: true
+  proxy:
+    image: nginx:mainline
+    networks:
+      default: null
 networks:
   default:
     name: dockercompose10694756654724241922_default

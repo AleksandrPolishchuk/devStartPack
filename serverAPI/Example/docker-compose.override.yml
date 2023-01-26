@@ -10,3 +10,9 @@ services:
   client:
     ports:
      - "5001:3000"
+
+  proxy:
+    volumes:
+     - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+     - "80:80"

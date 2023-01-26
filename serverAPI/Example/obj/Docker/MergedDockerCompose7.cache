@@ -35,6 +35,12 @@ services:
       target: 80
       published: "80"
       protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\HS\source\repos\devStartPack\serverAPI\Example\nginx.conf
+      target: /etc/nginx/nginx.conf
+      bind:
+        create_host_path: true
 networks:
   default:
     name: dockercompose10694756654724241922_default

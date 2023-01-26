@@ -1,0 +1,2 @@
+C:\Users\HS\source\repos\devStartPack\serverAPI\Example\bin\Debug\Example.dll
+C:\Users\HS\source\repos\devStartPack\serverAPI\Example\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
